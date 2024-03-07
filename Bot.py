@@ -5,17 +5,17 @@ import requests
 import openai
 
 # Crea un objeto bot con tu token
-bot = telebot.TeleBot("6609925188:AAH7HTH5cGTa35GG90PORjpoV7OPIJB87T8")
-openai.api_key = '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'
+bot = telebot.TeleBot("")
+openai.api_key = ''
 
 # Configura las credenciales de IBM Watson Speech to Text
-authenticator = IAMAuthenticator('CnxW9oIaYALaqdjlVLRXfflgIVi1cULZvFr-RM8HGtDj')
+authenticator = IAMAuthenticator('')
 speech_to_text = SpeechToTextV1(
     authenticator=authenticator
 )
 
 # Configura la URL de servicio de IBM Watson Speech to Text
-speech_to_text.set_service_url('https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/09628668-1d3e-49ba-ad65-d6da3de0048d')
+speech_to_text.set_service_url('')
 
 
 # Maneja el comando '/start'
